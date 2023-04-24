@@ -16,7 +16,88 @@
   }
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  position: absolute;
+}
+
+/* .card-topRight,
+.card-topLeft,
+.card-bottomLeft,
+.card-bottomRight {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: #f87171;
+  color: #fff;
+  font-size: 1.5rem;
+  transform-origin: center center;
+} */
+
+.card-container:hover .card-topRight {
+   transform: translate(-50%, -200%);
+}
+
+.card-container:hover .card-topLeft {
+   transform: translate(-50%, -200%);
+}
+
+.card-container:hover .card-bottomLeft {
+  transform: rotate(-135deg) translate(8rem) rotate(135deg);
+}
+
+.card-container:hover .card-bottomRight {
+  transform: rotate(135deg) translate(8rem) rotate(-135deg);
+}
+
+/* .main-card {
+
+  transform: rotateX(0);
+}
+.card-container{
+  display: none;
+}
+
+.main-card:hover .card-container {
+  display: block;
+  transition: ease-out 0.4s;
+  transition-delay: 4s;  
+
+}
+
+.main-card:hover .card-topRight {
+   transform: translate(50%, -100%);
+  transition: ease-out 0.3s;
+}
+
+.main-card:hover .card-topLeft {
+   transform: translate(-50%, -200%);
+  transition: ease-out 0.3s;
+}
+
+.main-card:hover .card-bottomLeft {
+   transform: translate(-50%, 300%);
+  transition: ease-out 0.3s;
+}
+
+.main-card:hover .card-bottomRight {
+   transform: translate(50%, 200%);
+  transition: ease-out 0.3s;
+} */
+
+html,
+#__next {
+  height: 100%;
+}
 body {
+  height: 100%;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +105,44 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 65px;
+  font-size: small;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  padding: 3px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 99;
+  bottom: 140%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Specific styles for non-active links */
+.nonActive {
+  color: white;
+}
+
+/* Specific styles for active links */
+.active {
+  color: black;
+  background: orange;
 }
