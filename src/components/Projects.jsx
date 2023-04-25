@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className="p-5 flex justify-center">
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 max-w-[1200px] ">
-        <div className="bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit rounded-3xl p-4 relative">
+        <div className="project-card bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit rounded-3xl p-4 relative">
           <div className="gap-2 flex flex-col">
             <Image
               src={image}
@@ -29,7 +29,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit rounded-3xl p-4  relative">
+        <div className="project-card bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit rounded-3xl p-4  relative">
           <div className="gap-2 flex flex-col">
             <Image
               src={image}
@@ -52,7 +52,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit rounded-3xl p-4 relative">
+        <div className="project-card bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit rounded-3xl p-4 relative">
           <div className="gap-2 flex flex-col">
             <Image
               src={image}
