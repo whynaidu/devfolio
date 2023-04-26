@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 /* 
 .main-card {
@@ -84,12 +84,12 @@
 }
 
 .main-card .card-topRight {
-  transition: ease-in 2s;
+  transition: ease-in 0.5s;
   transform: translate(10%, 0%) scale(0) rotate(-300deg);
 }
 
 .main-card:hover .card-topRight {
-  transition: ease-out .5s;
+  transition: ease-out 0.5s;
   transform: translate(110%, -80%) scale(1) rotate(30deg);
 }
 .main-card .card-topLeft {
@@ -173,14 +173,12 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-.project-card{
-
-transition: ease-in-out 0.2s;
-transform: rotate(0);
+.project-card {
+  transition: ease-in-out 0.2s;
+  transform: rotate(0);
 }
 
-.project-card:hover{
-
-transition: ease-in-out 0.4s;
-transform: rotate(-2deg);
+.project-card:hover {
+  transition: ease-in-out 0.4s;
+  transform: rotate(-2deg);
 }
