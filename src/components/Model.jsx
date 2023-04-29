@@ -20,7 +20,7 @@ export function Model(props) {
 
   return (
     <group {...props} dispose={null}>
-      <mesh ref={mesh} scale={1} geometry={nodes.Suzanne.geometry} {...props}>
+      <mesh ref={mesh} scale={.8} geometry={nodes.Suzanne.geometry} {...props}>
         <meshNormalMaterial />
       </mesh>
     </group>
