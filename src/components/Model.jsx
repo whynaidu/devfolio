@@ -14,8 +14,11 @@ export function Model(props) {
   const { nodes } = useGLTF("./suzanne.glb");
   const [dummy] = useState(() => new THREE.Object3D());
   useFrame((state, dt) => {
-    dummy.lookAt(state.pointer.x, state.pointer.y, 1);
-    easing.dampQ(mesh.current.quaternion, dummy.quaternion, 0.15, dt);
+
+    if (window.innerWidth > 768) {
+      dummy.lookAt(state.pointer.x, state.pointer.y, 1);
+      easing.dampQ(mesh.current.quaternion, dummy.quaternion, 0.15, dt);
+    }
   });
 
   return (

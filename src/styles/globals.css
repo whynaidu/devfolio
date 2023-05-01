@@ -66,6 +66,25 @@ canvas {
   transform: translate(150%, 100%) rotate(-25deg);
 } */
 
+.typewriter {
+  overflow: hidden;
+  white-space: pre-wrap; /* Keep the text on one line */
+  font-size: 1em; /* Set the font size */
+  margin: 0 auto; 
+  max-width: 450px;
+  animation:
+    typing 3.5s steps(40, end)
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+
+
 .card-container {
   border: 2px solid red;
   opacity: 0;

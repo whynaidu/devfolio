@@ -29,7 +29,7 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="hidden lg:block">
+      <div className=" hidden lg:block">
         <Canvas className="">
           <ambientLight />
           <directionalLight position={[10, 10, 10]} />
@@ -39,8 +39,7 @@ export default function HomePage() {
         </Canvas>
       </div>
 
-      <div
-        className="flex justify-center items-center mx-auto absolute lg:top-1/2 lg:left-[40%]  top-1/3 left-[1.3rem]">
+      <div className="flex justify-center items-center mx-auto absolute lg:top-1/2 lg:left-[40%]  top-1/3 left-[1.3rem]">
         <div className="h-fit flex items-center text-center text-2xl lg:text-3xl font-semibold mx-2">
           <div className="main-card flex justify-center w-full">
             <div className="card-wrapper">

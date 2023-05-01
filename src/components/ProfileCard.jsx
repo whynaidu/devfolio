@@ -32,7 +32,7 @@ export default function ProfileCard() {
                 />
                 <div className="flex flex-col gap-2 mt-3">
                   <h1 className="text-white text-2xl  ">Hey again 👋 </h1>
-                  <p className="text-[#6e6e6e] text-sm max-w-[450px]">
+                  <p className="text-[#6e6e6e] text-sm max-w-[450px] typewriter">
                     When I'm not designing, I love to explore the outdoors.
                     Hiking and camping are two of my favorite activities, and
                     I'm always looking for new trails to conquer or campsites to
@@ -191,34 +191,34 @@ export default function ProfileCard() {
                   <h1 className="text-white text-2xl">Skills </h1>
                   <div className="grid grid-cols-5 place-items-center gap-5 bg-black py-5 rounded-xl text-3xl lg:text-5xl">
                     <div className="flex items-center rounded-lg">
-                      <IoLogoHtml5 className=" hover:text-orange-500" />
+                      <IoLogoHtml5 className=" hover:text-orange-500 hover:scale-125" />
+                    </div>
+                    <div className="flex items-center rounded-lg hover:scale-125">
+                      <IoLogoCss3 className=" hover:text-blue-600 hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <IoLogoCss3 className=" hover:text-blue-600" />
+                      <IoLogoJavascript className=" hover:text-yellow-400  hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <IoLogoJavascript className=" hover:text-yellow-400 " />
+                      <FaBootstrap className=" hover:text-purple-900  hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <FaBootstrap className=" hover:text-purple-900 " />
+                      <SiTailwindcss className=" hover:text-sky-300  hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <SiTailwindcss className=" hover:text-sky-300 " />
+                      <IoLogoReact className=" hover:text-sky-300  hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <IoLogoReact className=" hover:text-sky-300 " />
+                      <SiNextdotjs className=" hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <SiNextdotjs className="" />
+                      <IoLogoNodejs className="hover:text-green-500 hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <IoLogoNodejs className="hover:text-green-500 l" />
+                      <SiExpress className="  hover:scale-125" />
                     </div>
                     <div className="flex items-center rounded-lg">
-                      <SiExpress className="" />
-                    </div>
-                    <div className="flex items-center rounded-lg">
-                      <SiMongodb className="hover:text-green-800" />
+                      <SiMongodb className="hover:text-green-800 hover:scale-125" />
                     </div>
                   </div>
                 </div>
