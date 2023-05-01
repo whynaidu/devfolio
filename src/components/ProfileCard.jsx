@@ -32,7 +32,7 @@ export default function ProfileCard() {
                 />
                 <div className="flex flex-col gap-2 mt-3">
                   <h1 className="text-white text-2xl  ">Hey again 👋 </h1>
-                  <p className="text-[#6e6e6e] text-sm max-w-[450px] typewriter">
+                  <p className="text-[#6e6e6e] text-sm max-w-[450px]">
                     When I'm not designing, I love to explore the outdoors.
                     Hiking and camping are two of my favorite activities, and
                     I'm always looking for new trails to conquer or campsites to
