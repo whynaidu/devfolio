@@ -23,7 +23,7 @@ export default function ProfileCard() {
     <div>
       <div className="p-5 flex justify-center">
         <div className="max-w-[1100px] w-full first-letter:flex gap-6">
-          <div className="lg:fixed ">
+          <div className="lg:fixed main-card">
             <div className="bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit lg:w-[480px] rounded-3xl p-4 ">
               <div className="gap-2 flex flex-col">
                 <Image
@@ -52,7 +52,7 @@ export default function ProfileCard() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col  gap-4 self-end lg:ml-[calc(100%-54%)] mt-5 lg:mt-0">
+          <div className=" main-card flex flex-col gap-4 self-end lg:ml-[calc(100%-54%)] mt-5 lg:mt-0">
             <div className="bg-white bg-opacity-10 backdrop-blur-lg border flex flex-col border-[#ffffff1a] h-fit rounded-2xl p-4">
               <div className="gap-2 flex flex-col">
                 <div className="flex flex-col gap-2 mt-3">

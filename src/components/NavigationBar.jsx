@@ -13,7 +13,11 @@ export default function NavigationBar() {
     const router = useRouter();
 
   return (
-    <div className="flex justify-center z-50  mt-[-100px] fixed bottom-5 left-0 right-0">
+    <div
+      className={`flex justify-center z-50 mt-[-100px] fixed bottom-5 left-0 right-0 ${
+        router.pathname === "/" ? "slide-up" : ""
+      }`}
+    >
       <div className="flex w-fit p-2  bg-[#34343480] backdrop-blur-lg border border-[#ffffff25] rounded-2xl">
         <div className="space-x-3 mb-[-6px] flex items-center">
           <Link href="/">

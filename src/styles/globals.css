@@ -44,46 +44,56 @@ canvas {
   transform: translate(0%, 0%) scale(1);
   transition: all 0.5s ease-out;
 }
+ */
 
-.main-card:hover .card-topRight {
-  transition: ease-in-out 0.5s;
-  transform: translate(150%, -70%) rotate(30deg);
-
+.slide-up {
+  animation: slide-up 0.5s ease-out;
+  animation-fill-mode: forwards;
+  transform: translateY(0);
 }
 
-.main-card:hover .card-topLeft {
-  transition: ease-in-out 0.5s;
-  transform: translate(-150%, -60%) rotate(-45deg);
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-
-.main-card:hover .card-bottomLeft {
-  transition: ease-in-out 0.5s;
-  transform: translate(-150%, 100%) rotate(20deg);
-}
-
-.main-card:hover .card-bottomRight {
-  transition: ease-in-out 0.5s;
-  transform: translate(150%, 100%) rotate(-25deg);
-} */
 
 .typewriter {
   overflow: hidden;
   white-space: pre-wrap; /* Keep the text on one line */
   font-size: 1em; /* Set the font size */
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 450px;
-  animation:
-    typing 3.5s steps(40, end)
+  animation: typing 3.5s steps(40, end);
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
+.main-card {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 
-
-
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .card-container {
   border: 2px solid red;
@@ -193,7 +203,13 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+
 .project-card {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   transition: ease-in-out 0.2s;
   transform: rotate(0);
 }
