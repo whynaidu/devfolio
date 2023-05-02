@@ -96,7 +96,6 @@ canvas {
 }
 
 .card-container {
-  border: 2px solid red;
   opacity: 0;
   position: absolute;
   /* display: none; */
@@ -115,7 +114,7 @@ canvas {
 
 .main-card .card-topRight {
   transition: ease-in 0.5s;
-  transform: translate(10%, 0%) scale(0) rotate(-300deg);
+  transform: translate(10%, 0%) scale(0) rotate(0);
 }
 
 .main-card:hover .card-topRight {
