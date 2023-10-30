@@ -73,7 +73,7 @@ export default function HomePage() {
                 <div className="flex items-center mt-5">
                   <h1>Currently at </h1>
                   <div className="bg-green-500 mx-2 px-4 py-1 rounded-md">
-                    <h1>SlashRTC</h1>
+                    <h1>ACC</h1>
                   </div>
                 </div>
               </div>
